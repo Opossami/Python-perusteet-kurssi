@@ -3,4 +3,4 @@ input_float = input()
 r = float(input_float)
 import math
 pintaala = r * math.pi
-print(f"{pintaala}")
+print(f"{pintaala:.2f}")
