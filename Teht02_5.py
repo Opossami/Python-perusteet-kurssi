@@ -4,18 +4,22 @@
 print("Antaisitko esineen massan keskiaikaisten mittojen mukaan niin muutan sen kiloiksi!")
 
 leiviska = input("Kuinka monta leiviskää esine painaa?\n")
-leiviska = int(leiviska)
+leiviska = float(leiviska)
 
 naula = input("Kuinka monta naulaa esine painaa?\n")
-naula = int(naula)
+naula = float(naula)
 
 luoti = input("Kuinka monta luotia esine painaa?\n")
-luoti = int(luoti)
+luoti = float(luoti)
 
-aksiviel = leiviska * 20 * 32 * 13,3
-aluan = naula * 32 * 13,3
-ituol = luoti * 13,3
+aksiviel = float(leiviska * 20 * 32 * 13.3)
 
-paino = ituol + aluan + aksiviel
+aluan = float(naula * 32 * 13.3)
 
-print(f"Antamasi esine painaa kiloissa {paino} grammaa.")
+ituol = float(luoti * 13.3)
+
+gramma = ituol + aluan + aksiviel
+kilo = gramma / 1000
+
+print(f"Antamasi esine painaa kiloissa {gramma} grammaa.")
+print(f"tai tuttavallisemmin {kilo:.2f} kiloa")
