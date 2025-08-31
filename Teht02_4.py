@@ -13,4 +13,4 @@ keskiarvo = (luku1 + luku2 + luku3) / 3
 
 print(f"Lukujen summa on {summa}")
 print(f"Tulo on {tulo}")
-print(f"Keskiarvo on {keskiarvo}")
+print(f"Keskiarvo on {keskiarvo:.2f}")

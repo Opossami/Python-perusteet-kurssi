@@ -23,3 +23,4 @@ kilo = gramma / 1000
 
 print(f"Antamasi esine painaa kiloissa {gramma} grammaa.")
 print(f"tai tuttavallisemmin {kilo:.2f} kiloa")
+print(f"No sehän painaa {kilo:3.0f} kiloa ja {gramma:3.0f} grammaa.")

@@ -1,3 +1,3 @@
-print("Hei, mikä on nimesi?")
+print("Terve, mikä on nimesi?")
 name = input()
-print(f"Hei {name}!")
+print(f"Terve {name}!")
