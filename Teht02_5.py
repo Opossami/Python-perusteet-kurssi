@@ -12,15 +12,14 @@ naula = float(naula)
 luoti = input("Kuinka monta luotia esine painaa?\n")
 luoti = float(luoti)
 
+#painot käännettyinä
 aksiviel = float(leiviska * 20 * 32 * 13.3)
-
 aluan = float(naula * 32 * 13.3)
-
 ituol = float(luoti * 13.3)
 
-gramma = ituol + aluan + aksiviel
-kilo = gramma / 1000
 
-print(f"Antamasi esine painaa kiloissa {gramma} grammaa.")
-print(f"tai tuttavallisemmin {kilo:.2f} kiloa")
-print(f"No sehän painaa {kilo:3.0f} kiloa ja {gramma:3.0f} grammaa.")
+gramma = ituol + aluan + aksiviel
+kilo = gramma // 1000
+grammat = gramma - kilo * 1000
+
+print(f"No sehän painaa {kilo:3.0f} kiloa ja {grammat:3.0f} grammaa.")
