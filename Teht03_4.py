@@ -1,4 +1,4 @@
-vuosiluku =int(print("Anna vuosiluku?: "))
+vuosiluku =int(input("Anna vuosiluku?: "))
 
 if vuosiluku % 100 == 0 and vuosiluku % 400 == 0:
     print("Vuosi on karkausvuosi!")
