@@ -4,7 +4,7 @@ suurin = vertailukohta
 luku = input("Antaisitko seuraavan kokonaisluvun?: ")
 while luku != "":
     luku = input("Antaisitko seuraavan kokonaisluvun?: ")
-    if pienin > luku:
+    if pienin > luku and luku != "":
         pienin = luku
     if suurin < luku:
         suurin = luku
