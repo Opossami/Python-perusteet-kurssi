@@ -1,21 +1,13 @@
-print("Anna käyttäjätunnus?")
-tunnus = input("Käyttäjätunnus: \n")
-print("Anna salasana?")
-salasana = input("Salasana: \n")
-raja = 0
-while raja < 5:
+tunnus = input("Anna käyttäjätunnus: \n")
+salasana = input("Anna salasana: \n")
+raja = 1
+while raja <= 4:
     if tunnus != "python" or salasana != "rules":
-        print(f"Anna käyttäjätunnus? {raja}")
-        tunnus = input("Käyttäjätunnus: \n")
-        print(f"Anna salasana?{raja}")
-        salasana = input("Salasana: \n")
+        tunnus = input("Anna käyttäjätunnus: \n")
+        salasana = input("Anna salasana: \n")
         raja = raja + 1
     if tunnus == "python" and salasana == "rules":
        print("Tervetuloa!")
        break
-
-
-else:
+if raja >= 5:
     print("Pääsy evätty!")
-
-
