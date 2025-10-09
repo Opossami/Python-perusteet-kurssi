@@ -1,17 +1,11 @@
-luvut = ["0","1"]
-luvut.insert((int(input("Anna luku:"))))
+luvut = []
 
-print(f"{luvut}")
+luku = input("Anna luku: ")
 
+while luku != "":
+    luvut.append(luku)
+    luku = input("Anna luku: ")
 
-
-
-
-
-
-
-
-
-#Kirjoita ohjelma, joka kysyy käyttäjältä lukuja siihen saakka, kunnes tämä syöttää tyhjän merkkijonon lopetusmerkiksi.
-#opuksi ohjelma tulostaa saaduista luvuista viisi suurinta suuruusjärjestyksessä suurimmasta alkaen.
-#Vihje: listan alkioiden lajittelujärjestyksen voi kääntää antamalla sort-metodille argumentiksi reverse=True.
+else:
+    luvut.sort(reverse=True)
+    print(luvut[:5])
