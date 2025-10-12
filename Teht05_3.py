@@ -3,8 +3,8 @@ luku = int(input("Anna luku: "))
 if luku == 0 or luku == 1:
     print("Luku ei ole alkuluku")
 elif luku > 1:
-    for i in range(2,luku):
-        if luku % i == 0:
+    for x in range(2,luku):
+        if luku % x == 0:
             print("Luku ei ole alkuluku")
             break
     else:
