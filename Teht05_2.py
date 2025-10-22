@@ -1,12 +1,12 @@
 luvut = []
 
-luku = input("Anna luku: ")
+syote = input("Anna luku: ")
 
-while luku != "":
+while syote != " ":
+    luku =int(syote)
     luvut.append(luku)
     luku = input("Anna luku: ")
 
 else:
-    list(map(int, luvut))
     luvut.sort(reverse=True)
     print(luvut[:5])
