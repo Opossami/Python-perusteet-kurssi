@@ -1,11 +1,16 @@
 import random
 
 def noppa():
-    summa = random.randint(1, 6)
-        while summa < 6:
-            summa = random.randint(1,6)
-            print(summa)
-return summa
+        summa = random.randint(1,6)
+        print(summa)
+        return summa
 
-noppa()
+silmaluku = noppa()
+
+while silmaluku != 6:
+    print(silmaluku)
+    silmaluku = noppa()
+
+else:
+    print("Kutonen tuli")
 
