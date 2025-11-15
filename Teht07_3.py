@@ -1,5 +1,12 @@
-lentokentät = {"EFKH":"Helsinki",
-               "LHBP":"Budapest"}
+lentokentät = {"EFKH":"Helsinki, Helsinki-Vantaa",
+               "LHBP":"Budapest, Ferenc Liszt",
+               "EGLL":"London, Heathrow",
+                "KLAX":"Los Angeles international",
+               "LTFM":"Istanbul Airport",
+               "RJTT":"Tokyo, Haneda Airport",
+               "ZSPD":"Shanghai, Pudong International Airport",
+               "LFPG":"Charles de Gaulle Airport",
+               "KJFK":"New York, JFK International Airport"}
 
 def lisäys(icao, kaupunki):
     lentokentät[icao] = kaupunki
@@ -15,7 +22,7 @@ vastaus = input().lower()
 
 while vastaus != "lopeta":
     if vastaus == "lisätä":
-        icao = input("Anna lisättävä ICAO koodi:")
+        icao = input("Anna lisättävä ICAO koodi:").upper()
         kaupunki = input("Anna lisättävä kaupunki: ")
         lisäys(icao, kaupunki)
 
