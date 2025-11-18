@@ -10,4 +10,6 @@ while nimi != "":
         nimi = input("Anna nimi: ")
 
 else:
-    print(nimet)
+    for nimi in nimet:
+        print(nimi)
+
