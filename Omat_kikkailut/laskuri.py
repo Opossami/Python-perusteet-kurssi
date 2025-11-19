@@ -1,5 +1,23 @@
 print("-----Tervetuloa käyttämään laskinta!-----")
 
+def summa(num1, num2):
+    print("Yhteenlaskun tulos on:", num1 + num2)
+    return
+
+def vahennys(num1, num2):
+    print("Vähennyslaskun tulos on:", num1 - num2)
+    return
+
+def kertolasku(num1, num2):
+    print("Kertolaskun tulos on:", num1 * num2)
+    return
+
+def jakolasku(num1, num2):
+    if b != 0:
+        print("Jakolaskun tulos on:", num1 / num2)
+    else:
+        print("Nollalla ei voi jakaa")
+
 while True:
     print("Valitse mitä toimintoa haluat käyttää:\n A: Yhteenlasku \n B: Vähennyslasku \n"
           " C: Kertolasku \n D: Jakolasku")
@@ -13,12 +31,12 @@ while True:
     b = float(input("Anna toinen luku: "))
 
     if valinta == "A":
-        print("Yhteenlasku:", a + b)
+        summa(a, b)
     elif valinta == "B":
-        print("Vähennyslasku:", a - b)
+        vahennys(a, b)
     elif valinta == "C":
-        print("Kertolasku:", a * b)
+        kertolasku(a, b)
     elif valinta == "D":
-        print("Desimaalijakolasku:", a / b)
+        jakolasku(a, b)
     else:
         print("Valintasi oli virheellinen")
